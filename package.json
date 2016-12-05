@@ -1,0 +1,33 @@
+{
+  "name": "css-modules",
+  "version": "1.0.0",
+  "dependencies": {
+    "@reactivex/rxjs": "5.0.0-beta.6",
+    "dojo-actions": "^2.0.0-alpha.9",
+    "dojo-app": "^2.0.0-alpha.9",
+    "dojo-compose": "^2.0.0-beta.16",
+    "dojo-core": "^2.0.0-alpha.17",
+    "dojo-dom": "^2.0.0-alpha.6",
+    "dojo-has": "^2.0.0-alpha.6",
+    "dojo-routing": "^2.0.0-alpha.6",
+    "dojo-shim": "^2.0.0-beta.3",
+    "dojo-stores": "^2.0.0-alpha.4",
+    "dojo-widgets": "^2.0.0-alpha.14",
+    "dojo-interfaces": "^2.0.0-alpha.8",
+    "immutable": "^3.8.1",
+    "maquette": "^2.3.5"
+  },
+  "devDependencies": {
+    "@types/chai": "~3.4.0",
+    "@types/es6-shim": "~0.31.0",
+    "@types/glob": "~5.0.0",
+    "@types/grunt": "~0.4.0",
+    "@types/node": "^6.0.46",
+    "chai": "^3.5.0",
+    "dojo-cli-build-webpack": "^2.0.0-alpha.5",
+    "intern": "^3.2.3",
+    "istanbul": "^0.4.3",
+    "remap-istanbul": "^0.6.4",
+    "typescript": "~2.0.3"
+  }
+}
