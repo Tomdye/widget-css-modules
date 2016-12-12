@@ -7,8 +7,10 @@ import { DNode, Widget, WidgetState, WidgetOptions } from 'dojo-widgets/interfac
 import createMyWidget from './createMyWidget';
 import createStore from 'dojo-stores/store/createStore';
 import createObservableStoreMixin from 'dojo-stores/store/mixins/createObservableStoreMixin';
+require('shady-css-parser');
 
-import * as theme from './themes/blue/theme.module.styl';
+import * as blueTheme from './themes/blue/theme.module.styl';
+import * as greenTheme from './themes/green/theme.module.styl';
 // import * as greenMyWidgetTheme from './themes/green/my-widget.module.styl';
 
 const createObservableStore = createStore.mixin(createObservableStoreMixin())
@@ -36,10 +38,13 @@ const projector = createProjector({
 // }
 
 projector.children = [
-	d(`div.${theme.theme}`, [
+	d(`div.${blueTheme.theme}`, [
 		d(createMyWidget, { id: 'widget1' }),
-		d(createMyWidget, <WidgetOptions<WidgetState>> { id: 'widget2', stateFrom: widgetStore })
-	])
+		d(`div.${greenTheme.theme}`, [
+			d(createMyWidget, { id: 'widget2' })
+		])
+	]),
+	d(createMyWidget, { id: 'widget3', state: { classes: [ greenTheme.theme ] } }),
 
 	// d('button', {
 	// 	'onclick': changeTheme

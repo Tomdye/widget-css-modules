@@ -17,9 +17,6 @@ export type MyWidget = Widget<MyWidgetState>
 
 const createMyWidget = createWidgetBase.override({
 	getChildrenNodes(this: MyWidget): DNode[] {
-		// const { theme:stateTheme = {} } = this.state;
-		// const theme = assign(defaultTheme, stateTheme);
-
 		return [
 			d(`div.${css.root}`, [
 				'Hello,',
