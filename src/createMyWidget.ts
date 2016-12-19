@@ -1,6 +1,6 @@
 import { Widget, DNode, WidgetState } from 'dojo-widgets/interfaces';
 import createWidgetBase from 'dojo-widgets/createWidgetBase';
-import d from 'dojo-widgets/d';
+import { v } from 'dojo-widgets/d';
 import * as css from './styles/my-widget.module.styl';
 // import * as defaultTheme from './themes/default/my-widget.module.styl';
 // import { assign } from 'dojo-core/lang';
@@ -21,9 +21,9 @@ const createMyWidget = createWidgetBase.override({
 		// const theme = assign(defaultTheme, stateTheme);
 
 		return [
-			d(`div.${css.root}`, [
+			v(`div.${css.root}`, [
 				'Hello,',
-				d(`span.${css.strong}`, [ 'Dojo' ]),
+				v(`span.${css.strong}`, [ 'Dojo' ]),
 				'World!'
 			])
 		];
