@@ -1,7 +1,32 @@
-.root {}
+.root {
+	display: block;
+	border: 1px solid black;
+}
 
-.tabs {}
+.tabs {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid black;
+	> li {
+		display: inline-block;
+		margin: 0;
+		padding: 10px;
+		border: 1px solid black;
+		&:hover {
+			background: green;
+		}
+	}
+}
 
-.panels {}
+.activeTab {
+	background: red;
+}
 
-.panel {}
+.panels {
+	display: block;
+}
+
+.panel {
+	padding: 10px;
+}
