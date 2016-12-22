@@ -9,7 +9,8 @@ import createMyWidget from './createMyWidget';
 import createStore from 'dojo-stores/store/createStore';
 import createObservableStoreMixin from 'dojo-stores/store/mixins/createObservableStoreMixin';
 
-import * as theme from './themes/blue/theme.module.styl';
+import * as noir from './themes/noir/theme.module.styl';
+import * as aqua from './themes/aqua/theme.module.styl';
 
 const createObservableStore = createStore.mixin(createObservableStoreMixin())
 const widgetStore = createObservableStore({
@@ -27,7 +28,15 @@ const projector = createProjector({
 
 
 projector.children = [
-	v('h1', ['HELLO THERE']),
-	w(createTabPanel, {})
+	v('h2', ['Vanilla Widget CSS']),
+	w(createTabPanel, {}),
+	v(`section.${noir.theme}`, [
+		v('h2', ['Noir Theme']),
+		w(createTabPanel, {})
+	]),
+	v(`section.${aqua.theme}`, [
+		v('h2', ['Aqua Theme']),
+		w(createTabPanel, {})
+	])
 ];
 projector.append();
