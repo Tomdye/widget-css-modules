@@ -2,7 +2,7 @@
 import createProjector from 'dojo-widgets/createProjector';
 import createWidgetBase from 'dojo-widgets/createWidgetBase';
 import { v, w } from 'dojo-widgets/d';
-import createTabPanel from './tabpanel/createTabPanel';
+import createTabPanel from 'dojo-widgets/components/tabpanel/createTabPanel';
 import { Projector } from 'maquette';
 import { DNode, Widget, WidgetState, WidgetOptions } from 'dojo-widgets/interfaces';
 import createMyWidget from './createMyWidget';

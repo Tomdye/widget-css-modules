@@ -1,4 +1,4 @@
-import { Widget, DNode, WidgetState } from 'dojo-widgets/interfaces';
+import { Widget, DNode, WidgetState, WidgetProperties } from 'dojo-widgets/interfaces';
 import createWidgetBase from 'dojo-widgets/createWidgetBase';
 import { v } from 'dojo-widgets/d';
 import * as css from './styles/my-widget.module.styl';
@@ -13,7 +13,7 @@ export type MyWidgetTheme = {
 export type MyWidgetState = WidgetState & {
 	theme: MyWidgetTheme;
 }
-export type MyWidget = Widget<MyWidgetState>
+export type MyWidget = Widget<MyWidgetState, WidgetProperties>
 
 const createMyWidget = createWidgetBase.override({
 	getChildrenNodes(this: MyWidget): DNode[] {

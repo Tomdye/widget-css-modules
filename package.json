@@ -10,10 +10,10 @@
     "dojo-dom": "^2.0.0-alpha.6",
     "dojo-has": "^2.0.0-alpha.6",
     "dojo-routing": "^2.0.0-alpha.6",
-    "dojo-shim": "^2.0.0-beta.3",
+    "dojo-shim": "^2.0.0-beta.7",
     "dojo-stores": "^2.0.0-alpha.4",
     "dojo-widgets": "^2.0.0-alpha.14",
-    "dojo-interfaces": "^2.0.0-alpha.8",
+    "dojo-interfaces": "^2.0.0-alpha.9",
     "immutable": "^3.8.1",
     "maquette": "^2.3.5"
   },
@@ -27,7 +27,10 @@
     "dojo-cli-build-webpack": "^2.0.0-alpha.5",
     "intern": "^3.2.3",
     "istanbul": "^0.4.3",
+    "json-css-module-loader": "git+ssh://git@github.com/tomdye/json-css-module-loader.git",
+    "json-loader": "^0.5.4",
     "remap-istanbul": "^0.6.4",
-    "typescript": "~2.0.3"
+    "typescript": "~2.1.4",
+    "umd-compat-loader": "^1.0.3"
   }
 }
