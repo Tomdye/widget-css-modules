@@ -43,7 +43,7 @@ module.exports = {
 			{ test: /\.(jpe|jpg|png|woff|woff2|eot|ttf|svg)(\?.*$|$)/, loader: 'file?name=[path][name].[hash:6].[ext]' },
 			{ test: /\.styl$/, exclude: /\.module\.styl$/, loader: stylusLoader },
 			{ test: /\.module\.styl$/, exclude: 'node_modules', loader: cssLoader },
-			{ test: /\.module\.styl\.json$/, loader: 'my-loader' },
+			{ test: /\.module\.styl\.json$/, loader: 'json-css-module-loader' },
 			{ test: /\.module\.css$/, loader: ExtractTextPlugin.extract([ 'css-loader?sourceMap' ]) }
 		]
 	},
