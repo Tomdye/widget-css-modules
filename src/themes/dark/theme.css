@@ -3,15 +3,15 @@
 
 .tabPanel {
 	display: block;
-	background: var(--noir-tabPanel-background);
-	color: var(--noir-tabPanel-color);
+	background: var(--dark-tabPanel-background);
+	color: var(--dark-tabPanel-color);
 }
 
 .button {
-	background: var(--noir-button-background);
-	color: var(--noir-button-color);
-	padding: var(--noir-input-padding);
-	border: 1px solid var(--noir-button-border);
+	background: var(--dark-button-background);
+	color: var(--dark-button-color);
+	padding: var(--dark-input-padding);
+	border: 1px solid var(--dark-button-border);
 	border-radius: 5px;
 }
 
@@ -22,5 +22,5 @@
 }
 
 .tabPanelActiveTab {
-	background: var(--noir-tabPanelActiveTab-background);
+	background: var(--dark-tabPanelActiveTab-background);
 }

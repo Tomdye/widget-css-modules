@@ -13,7 +13,7 @@ import { DNode, Widget, WidgetState, WidgetOptions } from 'dojo-widgets/interfac
 // import * as dark from './themes/dark/theme.css';
 // import * as tabPanelOverrides from './styles/tabPanelOverrides.css';
 
-// themeManager.theme = <Theme> <any> dark;
+// themeManager.theme = <any> dark;
 
 const projector = createProjector({
 	root: document.body
@@ -22,9 +22,10 @@ const projector = createProjector({
 projector.children = [
 	v('h2', ['Theme Manager']),
 	w(createTabPanel, {}),
-	w(createButton, { properties: { label: 'Hello World' } }),
-	// w(createTabPanel, { properties: { overrideClasses: tabPanelOverrides } }),
-	// w(createButton, { properties: { label: 'Hello World', classes: [ appCss.myButton ] } }),
-	// w(createButton, { properties: { label: 'Hello World', classes: [ dojoCommon.pullRight ] }}),
+	w(createButton, { properties: { label: 'Hello World' } })
 ];
 projector.append();
+
+// w(createTabPanel, { properties: { overrideClasses: tabPanelOverrides } }),
+// w(createButton, { properties: { label: 'Hello World', classes: [ appCss.myButton ] } }),
+// w(createButton, { properties: { label: 'Hello World', classes: [ dojoCommon.pullRight ] } })
