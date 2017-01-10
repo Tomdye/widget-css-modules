@@ -1,1 +1,1 @@
-export const tabPanelActiveTab: string;
+export const tabPanelTab: string;

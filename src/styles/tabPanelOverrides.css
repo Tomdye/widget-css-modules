@@ -1,3 +1,7 @@
-.tabPanelActiveTab {
-	background: red;
+@import 'dojo-widgets/styles/variables';
+
+.tabPanelTab {
+	background: var(--dojo-green);
+	font-weight: bold;
+	text-transform: uppercase;
 }

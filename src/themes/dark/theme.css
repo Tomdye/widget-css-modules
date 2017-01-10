@@ -1,0 +1,26 @@
+@import './variables';
+@import 'dojo-widgets/styles/variables';
+
+.tabPanel {
+	display: block;
+	background: var(--noir-tabPanel-background);
+	color: var(--noir-tabPanel-color);
+}
+
+.button {
+	background: var(--noir-button-background);
+	color: var(--noir-button-color);
+	padding: var(--noir-input-padding);
+	border: 1px solid var(--noir-button-border);
+	border-radius: 5px;
+}
+
+.tabPanelTab {
+	composes: button;
+	display: inline-block;
+	margin-right: 2px;
+}
+
+.tabPanelActiveTab {
+	background: var(--noir-tabPanelActiveTab-background);
+}

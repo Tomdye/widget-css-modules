@@ -1,0 +1,5 @@
+@import 'dojo-widgets/styles/variables';
+
+.myButton {
+	background: var(--dojo-blue);
+}

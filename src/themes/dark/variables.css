@@ -1,0 +1,44 @@
+@import 'dojo-widgets/styles/variables';
+
+:root {
+	--noir-tabPanel-background: var(--dojo-black);
+	--noir-tabPanel-color: var(--dojo-off-white);
+	--noir-tabPanelActiveTab-background: color(var(--dojo-red) b(+20%));
+
+	--noir-button-background: var(--dojo-gray);
+	--noir-button-color: var(--dojo-off-white);
+	--noir-button-border: var(--dojo-black);
+
+	--noir-input-padding: 5px;
+}
+
+
+
+	/* Base colours */
+	/*--dojo-green: #01D48E;
+	--dojo-blue: #51ADED;
+	--dojo-red: #ED5153;
+	--dojo-base-gray: #E2E2E2;
+	--dojo-off-white: #FBFBFB;
+	--dojo-light-gray: #F1F1F1;
+	--dojo-gray: #9E9E9E;
+	--dojo-black: #5A5A5A;*/
+
+	/* Theme vars */
+	/*--dojo-theme-color: var(--dojo-red);
+	--dojo-border-color: var(--dojo-gray);
+	--dojo-border-hover-color: var(--dojo-black);
+
+	--dojo-button-background: var(--dojo-base-gray);
+	--dojo-button-hover-background: color(var(--dojo-base-gray) b(+15%));
+
+	--dojo-input-padding: 10px;
+	--dojo-outer-margin: 5px;
+
+	--dojo-active-background: var(--dojo-theme-color);
+
+	--dojo-input-border: 1px solid var(--dojo-border-color);
+	--dojo-input-hover-border: 1px solid var(--dojo-border-hover-color);
+
+	--dojo-transition-time: 0.3s;
+	--dojo-input-background-transition: background var(--dojo-transition-time);*/
