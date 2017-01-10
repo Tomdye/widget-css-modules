@@ -8,10 +8,10 @@ import createButton from 'dojo-widgets/components/button/createButton';
 import { Projector } from 'maquette';
 import { DNode, Widget, WidgetState, WidgetOptions } from 'dojo-widgets/interfaces';
 
-// import * as dojoCommon from 'dojo-widgets/styles/common';
-// import * as appCss from './styles/app.css';
 // import * as dark from './themes/dark/theme.css';
 // import * as tabPanelOverrides from './styles/tabPanelOverrides.css';
+// import * as dojoCommon from 'dojo-widgets/styles/common';
+// import * as appCss from './styles/app.css';
 
 // themeManager.theme = <any> dark;
 
@@ -20,12 +20,12 @@ const projector = createProjector({
 });
 
 projector.children = [
-	v('h2', ['Theme Manager']),
+	v('h1', ['Dojo 2 Demo']),
 	w(createTabPanel, {}),
 	w(createButton, { properties: { label: 'Hello World' } })
 ];
 projector.append();
 
 // w(createTabPanel, { properties: { overrideClasses: tabPanelOverrides } }),
+// w(createButton, { properties: { label: 'Hello World', classes: [ dojoCommon.pullRight ] } }),
 // w(createButton, { properties: { label: 'Hello World', classes: [ appCss.myButton ] } }),
-// w(createButton, { properties: { label: 'Hello World', classes: [ dojoCommon.pullRight ] } })
