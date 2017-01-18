@@ -1,0 +1,29 @@
+.tabPanel {
+	display: block;
+	border: 1px solid black;
+}
+
+.tabPanelTabs {
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+
+.tabPanelTab {
+	display: inline-block;
+	margin-right: 10px;
+	border-right: 1px solid black;
+}
+
+.tabPanelTab.tabPanelActiveTab {
+	background: red;
+}
+
+.tabPanelPanel {
+	padding: 5px;
+}
+
+.tabPanelPanels {
+	display: block;
+}
