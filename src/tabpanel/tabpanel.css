@@ -17,7 +17,7 @@
 }
 
 .tabPanelTab.tabPanelActiveTab {
-	background: red;
+	background: green;
 }
 
 .tabPanelPanel {
