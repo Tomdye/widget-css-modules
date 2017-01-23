@@ -3,11 +3,11 @@ import { Widget, WidgetOptions, WidgetProperties, WidgetState, DNode } from 'doj
 import createWidgetBase from 'dojo-widgets/createWidgetBase';
 import { v } from 'dojo-widgets/d';
 import themeable, { Themeable } from 'dojo-widgets/mixins/themeable';
-// import * as css from './tabpanel.css';
+import * as css from './styles/tabpanel.css';
 
 export interface TabPanelState extends WidgetState {}
 
-export type TabPanel = Widget<WidgetProperties> & Themeable<any>;
+export type TabPanel = Widget<WidgetProperties> & Themeable<typeof css>;
 
 export interface TabPanelFactory extends ComposeFactory<TabPanel, WidgetProperties> {}
 
@@ -15,7 +15,7 @@ const createTabPanel: TabPanelFactory = createWidgetBase.mixin(themeable).mixin(
 	mixin: {
 		tagName: 'tab-panel',
 		classes: [ 'css.tabPanel' ],
-		baseTheme: {},
+		baseTheme: css,
 		getChildrenNodes: function (this: TabPanel): DNode[] {
 			return [
 				v(`ul`, { classes: this.theme.tabPanelTabs }, [

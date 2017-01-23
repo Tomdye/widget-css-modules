@@ -1,3 +1,5 @@
+@import 'dojo-widgets/styles/variables.css';
+
 .tabPanel {
 	display: block;
 	border: 1px solid black;
@@ -26,4 +28,5 @@
 
 .tabPanelPanels {
 	display: block;
+	color: var(--primary-color);
 }

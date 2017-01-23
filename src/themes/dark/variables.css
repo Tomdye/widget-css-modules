@@ -10,4 +10,6 @@
 	--dark-button-border: var(--dojo-black);
 
 	--dark-input-padding: 8px;
+
+	--my-color: color(red, l(20%));
 }
