@@ -1,4 +1,4 @@
-@import 'dojo-widgets/styles/variables.css';
+@import '@dojo/widgets/styles/variables.css';
 
 .tabPanel {
 	display: block;

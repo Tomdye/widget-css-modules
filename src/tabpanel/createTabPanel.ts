@@ -1,11 +1,9 @@
-import { ComposeFactory } from 'dojo-compose/compose';
-import { Widget, WidgetOptions, WidgetProperties, WidgetState, DNode } from 'dojo-widgets/interfaces';
-import createWidgetBase from 'dojo-widgets/createWidgetBase';
-import { v } from 'dojo-widgets/d';
-import themeable, { Themeable } from 'dojo-widgets/mixins/themeable';
+import { ComposeFactory } from '@dojo/compose/compose';
+import { Widget, WidgetOptions, WidgetProperties, DNode } from '@dojo/widget-core/interfaces';
+import createWidgetBase from '@dojo/widget-core/createWidgetBase';
+import { v } from '@dojo/widget-core/d';
+import themeable, { Themeable } from '@dojo/widget-core/mixins/themeable';
 import * as css from './styles/tabpanel.css';
-
-export interface TabPanelState extends WidgetState {}
 
 export type TabPanel = Widget<WidgetProperties> & Themeable<typeof css>;
 
