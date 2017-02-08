@@ -3,7 +3,7 @@ import { Widget, WidgetOptions, WidgetProperties, DNode } from '@dojo/widget-cor
 import createWidgetBase from '@dojo/widget-core/createWidgetBase';
 import { v } from '@dojo/widget-core/d';
 import themeable, { ThemeableMixin } from '@dojo/widget-core/mixins/themeable';
-import * as baseClasses from './styles/tabpanel.css';
+import * as baseClasses from './styles/tabpanel2.css';
 
 export type TabPanel = Widget<WidgetProperties> & ThemeableMixin;
 
